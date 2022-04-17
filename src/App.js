@@ -22,7 +22,6 @@ export default function App() {
 
   return (
     <div className="container">
-      <div>{<pre>{JSON.stringify(info, null, 2)}</pre>}</div>
       <form onSubmit={handleSubmit(onSubmit)}>
         <h2>Registration form(react-hook-form)</h2>
         <div>
@@ -105,7 +104,9 @@ export default function App() {
         </p>
         <br />
         <button className="btn">Submit</button>
-      </form>
+      </form><br />
+      <h2>Rendered data</h2>
+      <h2>{<pre>{JSON.stringify(info, null, 2)}</pre>}</h2>
     </div>
   );
 }
